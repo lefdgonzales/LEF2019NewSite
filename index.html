@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLef"
+        aria-controls="navbarLef" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
+              aria-controls="products" aria-selected="true">
+              Products
+            </a>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle" id="health-tab" href="" role="button" data-toggle="dropdown"
+              aria-controls="health" aria-selected="false">
+              Health Solutions
+            </a>
+            <div class="dropdown-menu w-100">
+              <a href="" class="nav-link">link</a>
+              <a href="" class="nav-link">link</a>
+              <a href="" class="nav-link">link</a>
+              <a href="" class="nav-link">link</a>
+              <a href="" class="nav-link">link</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="science-tab" data-toggle="tab" href="#science" role="tab" aria-controls="science"
+              aria-selected="false">
+              Our Science
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="life-tab" data-toggle="tab" href="#life" role="tab" aria-controls="life"
+              aria-selected="false">
+              Why Do Life Extension
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link">Vitamins &amp; Supplements</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Diet &amp; Lifestyle</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Beauty &amp; Personal Care</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Lab Testing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">On Sale</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">A - Z</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="health-tab">Health</div>
+          <div class="tab-pane fade" id="science" role="tabpanel" aria-labelledby="science-tab">Our Science</div>
+          <div class="tab-pane fade" id="life" role="tabpanel" aria-labelledby="life-tab">Why Life</div>
+        </div>
+      </nav>
+      <div>
+        <div class="input-group md-form form-sm form-1 pl-0">
+          <div class="input-group-prepend">
+            <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+                aria-hidden="true"></i></span>
+          </div>
+          <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.nav-tabs > li > a[data-toggle="tab"]').hover(function () {
+        $(this).tab('show');
+      });
+    });
+
+  </script>
+</body>
+
+</html>
