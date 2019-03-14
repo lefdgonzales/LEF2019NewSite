@@ -10309,6 +10309,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+#mainNavBar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#mainNavBar li.active {
+  background-color: #6c757d;
+}
+
 .dropdown-menu {
   margin-top: 0;
 }

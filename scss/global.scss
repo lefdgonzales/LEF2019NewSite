@@ -2,6 +2,14 @@ $enable-rounded: false;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+#mainNavBar {
+    padding-top: 0;
+    padding-bottom: 0;
+    li.active {
+        background-color: $secondary;
+    }
+}
+
 #navSub {
     > ul {
         > li {
