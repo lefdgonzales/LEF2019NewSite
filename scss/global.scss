@@ -1,4 +1,43 @@
-// $enable-rounded: false;
-* {
-    border-radius: 0 !important;
+$enable-rounded: false;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+#navSub {
+    > ul {
+        > li {
+            @extend .nav-item;
+        }
+    }
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    h6 {
+        @extend .dropdown-header;
+    }
+    a {
+        @extend .dropdown-item;
+        &:focus {
+            color: $primary;
+            background-color: transparent;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0 0 15px;
+        padding: 0;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        li:first-of-type a {
+            font-weight: bold;
+        }
+        li:not(:first-of-type) {
+            padding-left: 20px;
+        }
+    }
+}
+
+.open > .dropdown-menu{
+    margin-top: initial;
 }

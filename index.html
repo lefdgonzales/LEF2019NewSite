@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -17,86 +16,215 @@
 
 <body>
 
-  <header>
-    <div class="container-fluid">
-      <nav class="navbar-light">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLef"
-        aria-controls="navbarLef" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
-              aria-controls="products" aria-selected="true">
-              Products
-            </a>
+  <nav id="mainNavBar" class="navbar navbar-expand-lg navbar-dark bg-dark lef-nav">
+    <div class="container position-relative">
+      <a class="navbar-brand" href="#">LEF</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <div id="products" class="nav-link main-menu">Products</div>
           </li>
-          <li class="nav-item dropdown position-static">
-            <a class="nav-link dropdown-toggle" id="health-tab" href="" role="button" data-toggle="dropdown"
-              aria-controls="health" aria-selected="false">
-              Health Solutions
-            </a>
-            <div class="dropdown-menu w-100">
-              <a href="" class="nav-link">link</a>
-              <a href="" class="nav-link">link</a>
-              <a href="" class="nav-link">link</a>
-              <a href="" class="nav-link">link</a>
-              <a href="" class="nav-link">link</a>
-            </div>
+          <li class="dropdown position-static">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://lifeextension.com" role="button" aria-haspopup="true" aria-expanded="false">Health Basics</a>
+              <div class="dropdown-menu w-100 bg-light">
+                <div class="row">
+                  <div class="col-md-4 border-right">
+                    <h6>Featured Health Basics:</h6>
+                    <ul>
+                      <li><a href="">Brain Health</a></li>
+                      <li><a href="">Memory</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="">Digestive Health</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="">Hearth Health</a></li>
+                      <li><a href="">Blood Pressure</a></li>
+                      <li><a href="">Cholesterol</a></li>
+                      <li><a href="">Cardiovascular</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="">Immune Support</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="">Joint Health</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <h6>More Health Basics:</h6>
+                    <div class="row">
+                      <div class="col-md">
+                        <a href="">Anti-Aging &amp; Longevity</a>
+                        <a href="">Bone Health</a>
+                        <a href="">Energy Management</a>
+                        <a href="">Exercise, Fitness &amp; Muscle Health</a>
+                        <a href="">Eye Health</a>
+                      </div>
+                      <div class="col-md">
+                        <a href="">Glucose Management</a>
+                        <a href="">Hormonal Health/Balance</a>
+                        <a href="">Inflammation</a>
+                        <a href="">Kidney, Bladder, Urinary Health</a>
+                        <a href="">Life Health/Detoxification</a>
+                        <a href="">Men's Health</a>
+                      </div>
+                      <div class="col-md">
+                        <a href="">Mood &amp; Stress</a>
+                        <a href="">Seasonal (Allergies, Cold, Flu</a>
+                        <a href="">Sexual Health</a>
+                        <a href="">Sleep</a>
+                        <a href="">Women's Health</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="science-tab" data-toggle="tab" href="#science" role="tab" aria-controls="science"
-              aria-selected="false">
-              Our Science
-            </a>
+            <div id="ourScience" class="nav-link main-menu">Our Science</div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="life-tab" data-toggle="tab" href="#life" role="tab" aria-controls="life"
-              aria-selected="false">
-              Why Do Life Extension
-            </a>
+            <div id="aboutUs" class="nav-link">About Us</div>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
-            <ul class="nav">
-              <li class="nav-item"><a href="#" class="nav-link">Vitamins &amp; Supplements</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Diet &amp; Lifestyle</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Beauty &amp; Personal Care</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Lab Testing</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">On Sale</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">A - Z</a></li>
-            </ul>
-          </div>
-          <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="health-tab">Health</div>
-          <div class="tab-pane fade" id="science" role="tabpanel" aria-labelledby="science-tab">Our Science</div>
-          <div class="tab-pane fade" id="life" role="tabpanel" aria-labelledby="life-tab">Why Life</div>
-        </div>
-      </nav>
-      <div>
-        <div class="input-group md-form form-sm form-1 pl-0">
-          <div class="input-group-prepend">
-            <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
-                aria-hidden="true"></i></span>
-          </div>
-          <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
-        </div>
       </div>
     </div>
-  </header>
+  </nav>
+  <nav id="sub-navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary sub-navbar">
+    <div class="container position-relative">
+      <div id="navSub" class="lef-sub-nav">
+        <ul id="sub-products" class="navbar-nav">
+          <li class="dropdown position-static">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://www.espn.com" role="button" aria-haspopup="true"
+              aria-expanded="false">Vitamins &amp; Supplements</a>
+            <div class="dropdown-menu w-100 bg-light">
+              <div class="row">
+                <div class="col-md-3 border-right">
+                  <h6>Featured</h6>
+                  <a href="">Where to Start</a>
+                  <a href="">Best Sellers</a>
+                  <a href="">New &amp; Reformulated</a>
+                  <a href="">On Sale</a>
+                </div>
+                <div class="col-md-3 border-right">
+                  <h6>By Type</h6>
+                  <a href="">Amino Acids</a>
+                  <a href="">Antioxidants</a>
+                  <a href="">CoQ10</a>
+                  <a href="">Digestive Enzymes</a>
+                  <a href="">Fish Oil &amp; Omegas</a>
+                  <a href="">Herbs &amp; Botanicals</a>
+                  <a href="">Hormones</a>
+                  <a href="">Letter Vitamins (A, B, C, D, E, K)</a>
+                  <a href="">Minerals</a>
+                  <a href="">Multivitamins</a>
+                  <a href="">Probiotics &amp; Prebiotics</a>
+                </div>
+                <div class="col-md-6">
+                  <h6>By Health Concern</h6>
+                  <div class="row">
+                    <div class="col-md">
+                      <a href="">Anti-Aging &amp; Longevity</a>
+                      <a href="">Bone Health</a>
+                      <a href="">Brain Health</a>
+                      <a href="">Digestive Health</a>
+                      <a href="">Eye Health</a>
+                      <a href="">Glucose Management</a>
+                      <a href="">Heart Health</a>
+                      <a href="">Hormonal Health/Balance</a>
+                      <a href="">Immune Support</a>
+                      <a href="">Inflammation Management</a>
+                      <a href="">Joint Health</a>
+                    </div>
+                    <div class="col-md">
+                      <a href="">Kidney, Bladader, Urinary Health</a>
+                      <a href="">Liver Health/Detoxification</a>
+                      <a href="">Mood &amp; Stress</a>
+                      <a href="">Nerve Health &amp; Comfort Support</a>
+                      <a href="">Seasonal (Allergies, Cold, Flu)</a>
+                      <a href="">Sexual Health</a>
+                      <a href="">Sleep</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Diet &amp; Lifestyle</a>
+            <div class="dropdown-menu bg-light">
+                <a href="">Active Lifestyle &amp; Fitness</a>
+                <a href="">Energy Management</a>
+                <a href="">Food/Drink</a>
+                <a href="">Men's Health</a>
+                <a href="">Pet Care</a>
+                <a href="">Weight Management</a>
+                <a href="">Women's Health</a>
+                <a href="">Books &amp; Media</a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="#">Beauty &amp; Personal Care</a></li>
+          <li><a class="nav-link" href="#">Lab Testing</a></li>
+          <li><a class="nav-link" href="#">On Sale</a></li>
+          <li><a class="nav-link" href="#">A - Z</a></li>
+        </ul>
+        <ul id="sub-ourScience" class="navbar-nav">
+          <li><a class="nav-link" href="#">Research</a></li>
+          <li><a class="nav-link" href="#">Magazine</a></li>
+          <li><a class="nav-link" href="#">Health Protocols A-Z</a></li>
+          <li><a class="nav-link" href="#">Newsroom</a></li>
+          <li><a class="nav-link" href="#">About Life Extension</a></li>
+          <li><a class="nav-link" href="#">Videos &amp; Podcasts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script>
-    $(document).ready(function () {
-      $('.nav-tabs > li > a[data-toggle="tab"]').hover(function () {
-        $(this).tab('show');
-      });
+    $('nav#sub-navbar .lef-sub-nav > ul:not(:first-child)').hide(); //hide navbar on page load
+
+    //menu handler, will keep only the last selected menu open.
+    $(".main-menu").hover(function () {
+      $("#navSub").children().hide(); //hide all sub menu items
+      $('nav#sub-navbar').show(); //show main menu
+
+      //handle links
+      idSubNav = $(this).attr('id');
+      $(this).parents('ul').children().removeClass("active"); //remove all active classes from main navbar links
+      $(this).parent().addClass("active"); //set selected navbar link to active
+      $("ul#sub-" + idSubNav).show(); //show sub menu
     });
+
+    //dropdown on hover with parent link clickable
+    $('#mainNavBar .dropdown > a, #sub-navbar .dropdown > a').click(function () {
+      location.href = this.href;
+    });
+
+    $(".dropdown")
+      .mouseover(function () {
+        $(this).addClass('show').attr('aria-expanded', "true");
+        $(this).find('.dropdown-menu').addClass('show');
+      })
+      .mouseout(function () {
+        $(this).removeClass('show').attr('aria-expanded', "false");
+        $(this).find('.dropdown-menu').removeClass('show');
+      });
+
 
   </script>
 </body>
