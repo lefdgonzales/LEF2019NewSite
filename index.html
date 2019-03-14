@@ -196,21 +196,26 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script>
-    $('nav#sub-navbar .lef-sub-nav > ul:not(:first-child)').hide(); //hide navbar on page load
+    // Main Nav tab hovers
+    $('.nav-link').hover(function(){
+      $(this).parents('ul').children().removeClass("active");
+      $(this).parent().addClass("active");
+    });
 
-    //menu handler, will keep only the last selected menu open.
+    //Hide navbar on page load
+    $('nav#sub-navbar .lef-sub-nav > ul:not(:first-child)').hide(); 
+
+    //Sub Menu handler, will keep only the last selected menu open
     $(".main-menu").hover(function () {
       $("#navSub").children().hide(); //hide all sub menu items
       $('nav#sub-navbar').show(); //show main menu
 
-      //handle links
+      //Handle links
       idSubNav = $(this).attr('id');
-      $(this).parents('ul').children().removeClass("active"); //remove all active classes from main navbar links
-      $(this).parent().addClass("active"); //set selected navbar link to active
       $("ul#sub-" + idSubNav).show(); //show sub menu
     });
 
-    //dropdown on hover with parent link clickable
+    //Dropdown on hover with parent link clickable
     $('#mainNavBar .dropdown > a, #sub-navbar .dropdown > a').click(function () {
       location.href = this.href;
     });
@@ -224,8 +229,6 @@
         $(this).removeClass('show').attr('aria-expanded', "false");
         $(this).find('.dropdown-menu').removeClass('show');
       });
-
-
   </script>
 </body>
 
