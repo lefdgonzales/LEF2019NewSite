@@ -43,6 +43,10 @@ sup {
     font-size: .85rem;
 }
 
+.card {
+    border-radius: 0;
+}
+
 .badge {
     font-size: 1rem;
     font-weight: normal;
@@ -142,7 +146,7 @@ sup {
         span {
             font-size: 2.25rem;
             font-weight: bold;
-            padding-left: 5pxpx;
+            padding-left: 5px;
         }
     }
     p:first-of-type {
@@ -222,6 +226,121 @@ sup {
     }
 }
 
+.product-info-graphic {
+    text-align: center;
+}
+
+.product-lef-info {
+    background-color: $light;
+    padding: 20px;
+    ul {
+        font-size: 1.25rem;
+    }
+}
+
+.product-why-buy {
+    h2 {
+        margin-bottom: 20px;
+    }
+    p {
+        font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    ul {
+        font-size: 1.25em;
+        list-style-type: square;
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.product-references {
+    .btn:focus {
+        box-shadow: none !important;
+    }
+}
+
+.related-blood {
+    h5 {
+        margin: 0;
+    }
+    img {
+        width: 130px;
+        height: auto;
+    }
+    p span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.fda-box {
+    text-align: center;
+    background-color: $light;
+    border: 1px solid $secondary;
+    padding: 15px 20px;
+}
+
+/* Product Supplement Facts */
+#tabsSupplementFacts {
+    td {
+      padding: 5px 0;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    .wwwProdLDTitleSections {
+      font-weight: bold;
+    }
+  
+    .wwwProdLDCellAmountPerServing {
+      font-weight: bold;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+  
+    .wwwProdLDCellIngredientA, .wwwProdLDCellIngredientSubA {
+      border-bottom: 2px solid #000;
+    }
+  
+    .wwwProdLDCellOtherIngredients {
+      border-bottom: 3px solid #000;
+    }
+  
+    .wwwProdLDCellIngredientSubA, .wwwProdLDCellIngredientSubB {
+      padding-left: 15px;
+    }
+  }
+
+
+// Slick Slider
+
+.slick-prev:before,
+.slick-next:before {
+  color: $secondary !important;
+}
+
+.prod-slide {
+    img {
+        margin: 0 auto;
+        width: 125px;
+        height: auto;
+    }
+    > div {
+        padding: 0 40px;
+    }
+    .prod-diff {
+        margin: 0;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
 // Star Rating
 .star-ratings-css {
     unicode-bidi: bidi-override;
@@ -246,5 +365,11 @@ sup {
       padding: 0;
       display: block;
       z-index: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px;) {
+    .fda-box {
+        margin: 0 150px;
     }
   }

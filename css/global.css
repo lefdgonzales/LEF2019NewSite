@@ -10350,6 +10350,10 @@ sup {
   font-size: .85rem;
 }
 
+.card {
+  border-radius: 0;
+}
+
 .badge {
   font-size: 1rem;
   font-weight: normal;
@@ -10434,7 +10438,7 @@ sup {
 .product-price p span, .product-basket-price p span {
   font-size: 2.25rem;
   font-weight: bold;
-  padding-left: 5pxpx;
+  padding-left: 5px;
 }
 
 .product-price p:first-of-type, .product-basket-price p:first-of-type {
@@ -10526,6 +10530,117 @@ sup {
 
 .product-review-snip .carousel-indicators {
   bottom: -50px;
+}
+
+.product-info-graphic {
+  text-align: center;
+}
+
+.product-lef-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.product-lef-info ul {
+  font-size: 1.25rem;
+}
+
+.product-why-buy h2 {
+  margin-bottom: 20px;
+}
+
+.product-why-buy p {
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.product-why-buy ul {
+  font-size: 1.25em;
+  list-style-type: square;
+}
+
+.product-why-buy ul li {
+  margin-bottom: 15px;
+}
+
+.product-references .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.related-blood h5 {
+  margin: 0;
+}
+
+.related-blood img {
+  width: 130px;
+  height: auto;
+}
+
+.related-blood p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fda-box {
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #6c757d;
+  padding: 15px 20px;
+}
+
+/* Product Supplement Facts */
+#tabsSupplementFacts td {
+  padding: 5px 0;
+}
+
+#tabsSupplementFacts p {
+  margin: 0;
+}
+
+#tabsSupplementFacts .wwwProdLDTitleSections {
+  font-weight: bold;
+}
+
+#tabsSupplementFacts .wwwProdLDCellAmountPerServing {
+  font-weight: bold;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#tabsSupplementFacts .wwwProdLDCellIngredientA, #tabsSupplementFacts .wwwProdLDCellIngredientSubA {
+  border-bottom: 2px solid #000;
+}
+
+#tabsSupplementFacts .wwwProdLDCellOtherIngredients {
+  border-bottom: 3px solid #000;
+}
+
+#tabsSupplementFacts .wwwProdLDCellIngredientSubA, #tabsSupplementFacts .wwwProdLDCellIngredientSubB {
+  padding-left: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #6c757d !important;
+}
+
+.prod-slide img {
+  margin: 0 auto;
+  width: 125px;
+  height: auto;
+}
+
+.prod-slide > div {
+  padding: 0 40px;
+}
+
+.prod-slide .prod-diff {
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .star-ratings-css {
