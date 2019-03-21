@@ -10311,7 +10311,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 h1, h2, h3, h4 {
@@ -10590,6 +10590,13 @@ sup {
   padding: 15px 20px;
 }
 
+.lef-cta {
+  background-color: #f8f9fa;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
 /* Product Supplement Facts */
 #tabsSupplementFacts td {
   padding: 5px 0;
@@ -10669,5 +10676,14 @@ sup {
   padding: 0;
   display: block;
   z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .fda-box {
+    margin: 0 150px;
+  }
+  .lef-search .container {
+    padding: 0 100px;
+  }
 }
 /*# sourceMappingURL=global.css.map */

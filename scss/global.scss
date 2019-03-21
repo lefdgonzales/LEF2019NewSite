@@ -4,7 +4,7 @@ $enable-rounded: false;
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 body {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 h1, h2, h3, h4 {
@@ -283,6 +283,13 @@ sup {
     padding: 15px 20px;
 }
 
+.lef-cta {
+    background-color: $light;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
 /* Product Supplement Facts */
 #tabsSupplementFacts {
     td {
@@ -318,7 +325,6 @@ sup {
 
 
 // Slick Slider
-
 .slick-prev:before,
 .slick-next:before {
   color: $secondary !important;
@@ -368,8 +374,14 @@ sup {
     }
   }
 
-  @media screen and (min-width: 768px;) {
+  @media screen and (min-width: 768px) {
     .fda-box {
         margin: 0 150px;
+    }
+
+    .lef-search {
+        .container {
+            padding: 0 100px;
+        }
     }
   }
