@@ -4,7 +4,7 @@ $enable-rounded: false;
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 body {
-    padding: 10px 0;
+    position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -51,6 +51,18 @@ sup {
     font-size: 1rem;
     font-weight: normal;
     border-radius: 0;
+}
+
+.lef-breadcrumbs {
+    .breadcrumb {
+        font-size: 14px;
+        background-color: transparent;
+        padding: 0;
+        margin: 0 0 30px;
+        a {
+            color: $dark;
+        }
+    }
 }
 
 #mainNavBar {
@@ -161,12 +173,6 @@ sup {
     }
 }
 
-.product-controls {
-    .btn {
-        margin-right: 15px;
-    }
-}
-
 .product-basket {
     display: flex;
     align-items: center;
@@ -196,7 +202,7 @@ sup {
 }
 
 .product-review-snip {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     p {
         margin: 0;
     }
@@ -208,6 +214,10 @@ sup {
     .carousel-inner {
         padding: 30px 50px;
     }
+    .carousel-indicators {
+        margin-bottom: 0;
+    }
+
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23939393' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
     }
@@ -222,7 +232,7 @@ sup {
         border-radius: 100%;
     }
     .carousel-indicators {
-        bottom: -50px;
+        bottom: -30px;
     }
 }
 
@@ -345,6 +355,11 @@ sup {
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
     }
+    .product-price {
+        p {
+            margin: 0;
+        }
+    }
 }
 
 // Star Rating
@@ -374,6 +389,48 @@ sup {
     }
   }
 
+  // Sticky nav product page
+  .sticky-prod-nav {
+      padding: 10px 0;
+      background-color: #ebebeb;
+      position: fixed;
+      top: 0;
+      margin: 0 auto;
+      width: 100%;
+      z-index: 9999;
+      h3 {
+          margin: 0;
+      }
+      p {
+          margin: 0;
+      }
+      ul {
+          margin: 0;
+      }
+  }
+
+  .sticky-top-nav {
+      margin-bottom: 15px;
+      > div {
+          clear: both;
+      }
+      img {
+          width: 35px;
+          height: auto;
+          margin: 0 10px 0 0;
+      }
+  }
+
+  .sticky-sub-nav {
+      background-color: $light;
+      ul {
+          list-style: none;
+      }
+      .active {
+          color: red;
+      }
+  }
+
   @media screen and (min-width: 768px) {
     .fda-box {
         margin: 0 150px;
@@ -385,3 +442,9 @@ sup {
         }
     }
   }
+
+  @media only screen and (min-width: 1200px) {
+
+    .container { max-width: 1400px; } 
+
+}

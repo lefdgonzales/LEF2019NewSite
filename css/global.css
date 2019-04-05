@@ -10311,7 +10311,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  padding: 10px 0;
+  position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -10358,6 +10358,17 @@ sup {
   font-size: 1rem;
   font-weight: normal;
   border-radius: 0;
+}
+
+.lef-breadcrumbs .breadcrumb {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.lef-breadcrumbs .breadcrumb a {
+  color: #343a40;
 }
 
 #mainNavBar {
@@ -10453,10 +10464,6 @@ sup {
   margin: 0;
 }
 
-.product-controls .btn {
-  margin-right: 15px;
-}
-
 .product-basket {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10496,7 +10503,7 @@ sup {
 }
 
 .product-review-snip {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .product-review-snip p {
@@ -10511,6 +10518,10 @@ sup {
 
 .product-review-snip .carousel-inner {
   padding: 30px 50px;
+}
+
+.product-review-snip .carousel-indicators {
+  margin-bottom: 0;
 }
 
 .product-review-snip .carousel-control-prev-icon {
@@ -10529,7 +10540,7 @@ sup {
 }
 
 .product-review-snip .carousel-indicators {
-  bottom: -50px;
+  bottom: -30px;
 }
 
 .product-info-graphic {
@@ -10650,6 +10661,10 @@ sup {
   border-bottom: 1px solid #ccc;
 }
 
+.prod-slide .product-price p {
+  margin: 0;
+}
+
 .star-ratings-css {
   unicode-bidi: bidi-override;
   color: #c5c5c5;
@@ -10678,12 +10693,66 @@ sup {
   z-index: 0;
 }
 
+.sticky-prod-nav {
+  padding: 10px 0;
+  background-color: #ebebeb;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
+}
+
+.sticky-prod-nav h3 {
+  margin: 0;
+}
+
+.sticky-prod-nav p {
+  margin: 0;
+}
+
+.sticky-prod-nav ul {
+  margin: 0;
+}
+
+.sticky-top-nav {
+  margin-bottom: 15px;
+}
+
+.sticky-top-nav > div {
+  clear: both;
+}
+
+.sticky-top-nav img {
+  width: 35px;
+  height: auto;
+  margin: 0 10px 0 0;
+}
+
+.sticky-sub-nav {
+  background-color: #f8f9fa;
+}
+
+.sticky-sub-nav ul {
+  list-style: none;
+}
+
+.sticky-sub-nav .active {
+  color: red;
+}
+
 @media screen and (min-width: 768px) {
   .fda-box {
     margin: 0 150px;
   }
   .lef-search .container {
     padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
   }
 }
 /*# sourceMappingURL=global.css.map */

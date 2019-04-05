@@ -19,9 +19,40 @@
 </head>
 
 <body>
-    <div class="container text-right mb-2">
-        <a href="" class="text-secondary"><i class="fas fa-phone-square"></i> Contact Us</a>
+    <div id="stickyProdNav" class="sticky-prod-nav">
+        <div class="container">
+            <div class="sticky-top-nav row no-gutters">
+                <div class="col">
+                    <img src="images/img_01426_big.jpg" alt="" class="pull-left" />
+                    <p><strong>Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support</strong></p>
+                    <p>50 mg, 30 Softgels</p>
+                </div>
+                <div class="col clearfix">
+                    <div class="product-price d-flex align-items-center pull-right">
+                        <p>Your <br />Price </p>
+                        <p><span>$15.00</span></p>
+                        <ul class="list-unstyled mr-3">
+                            <li><s>$20.00</s></li>
+                            <li>Save $5.00 | 30%</li>
+                        </ul>
+                        <button class="btn btn-success mr-3">Add To Cart</button>
+                        <button id="toTop" class="btn btn-light"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="stickySubNav" class="sticky-sub-nav">
+                <ul class="list-group list-group-horizontal m-0">
+                    <li class="nav-item"><a href="#prodOverview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#prodReviews" class="nav-link">Reviews / Q&amp;A</a></li>
+                    <li class="nav-item"><a href="#prodDetails" class="nav-link">Details</a></li>
+                    <li class="nav-item"><a href="#prodSupFacts" class="nav-link">Supplement Facts</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <!-- <div class="container text-right mb-2">
+        <a href="" class="text-secondary"><i class="fas fa-phone-square"></i> Contact Us</a>
+    </div> -->
     <nav id="mainNavBar" class="navbar navbar-expand-lg navbar-dark bg-dark lef-nav">
         <div class="container position-relative">
             <a class="navbar-brand" href="#">LEF</a>
@@ -45,7 +76,8 @@
                     </li>
                 </ul>
                 <div>
-                    <a href="" id="aboutUs" class="text-light m-5">Sign In/Join</a>
+                    <a href="" class="text-light"><i class="fas fa-phone-square"></i> Contact Us&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="" id="aboutUs" class="text-light mr-4">Sign In/Join</a>
                     <a href="" class="text-light"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
@@ -159,7 +191,8 @@
     <div class="lef-search py-3 border-top border-bottom">
         <div class="container">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for products and health information or by item #"
+                <input type="text" class="form-control"
+                    placeholder="Search for products and health information or by item #"
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
@@ -175,10 +208,12 @@
     <div class="lef-breadcrumbs container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">< Back to Referring Page</a></li>
-                <li class="breadcrumb-item"><a href="#">Vitamins &amp; Supplements</a></li>
+                <li class="breadcrumb-item"><a href="#">
+                        < Back to Referring Page</a> </li> <li class="breadcrumb-item"><a href="#">Vitamins &amp;
+                                Supplements</a></li>
                 <li class="breadcrumb-item active" aria-current="page"><a href="#">CoQ10</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><strong></strong>Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support<sup>TM</sup></li>
+                <li class="breadcrumb-item active" aria-current="page"><strong></strong>Super Ubiquinol CoQ10 with
+                    Enhanced Mitochondrial Support<sup>TM</sup></li>
             </ol>
         </nav>
     </div>
@@ -235,120 +270,139 @@
                 </div>
             </div>
             <div class="col-md-8 pb-3">
-                <div class="row mb-3">
-                    <div class="col-md">
-                        <span class="badge badge-light">Best in Class</span>
-                    </div>
-                    <div class="col-md text-right">
-                        <span>Item# 01431</span>
-                    </div>
-                </div>
-                <div class="product-info border-bottom pb-3">
-                    <h1>Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support<sup>TM</sup></h1>
-                    <h2 class="h5">Ultra-absorbable CoQ10 for cell energy, heart health, &amp; more</h2>
-                    <div class="product-rating d-flex align-items-center mb-3">
-                        <div class="star-ratings-css mr-2">
-                            <div class="star-ratings-css-top" style="width: 84%">
-                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            <div class="star-ratings-css-bottom">
-                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="row">
+                    <div class="col-md-8 border-right">
+                        <div class="row mb-3">
+                            <div class="col-md">
+                                <span class="badge badge-light">Best in Class</span>
+                            </div>
+                            <div class="col-md text-right">
+                                <span>Item# 01431</span>
+                            </div>
                         </div>
-                        <div class="mr-4">
-                            <span><strong>4.0</strong></span>
+                        <div class="product-info pb-2">
+                            <h1>Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support<sup>TM</sup></h1>
+                            <p class="mb-2">Subtitle that may be included for some products.</p>
+                            <h2 class="h5">Short-form T1 benefit statement for the product.</h2>
+                            <div class="product-rating d-flex align-items-center mb-3">
+                                <div class="star-ratings-css mr-2">
+                                    <div class="star-ratings-css-top" style="width: 84%">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                    <div class="star-ratings-css-bottom">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                </div>
+                                <div class="mr-4">
+                                    <span><strong>4.0</strong></span>
+                                </div>
+                                <div>
+                                    <span><a href="">58 Reviews</a> | <a href="">50 Questions and Answers</a></span>
+                                </div>
+                                
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo duo
+                                dolores et ea rebum.
+                            </p>
+                            <ul class="list-inline m-0">
+                                <li><i class="fas fa-square-full text-muted"></i> Non GMO</li>
+                                <li><i class="fas fa-square-full text-muted"></i> Vegetarian</li>
+                            </ul>
+                        </div>
+                        <div class="product-variants py-4">
+                            <p class="m-0 mb-2"><strong>Available versions:</strong></p>
+                            <div class="d-flex align-items-center">
+                                <span>30 softgels</span>
+                                <button class="btn btn-secondary"><span>50 mg</span><br /> $00.00</button>
+                                <button class="btn btn-outline-secondary"><span>100 mg</span><br />
+                                    $00.00</button>
+                                <button class="btn btn-outline-secondary"><span>200 mg</span><br />
+                                    $00.00</button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span>60 softgels</span>
+                                <button class="btn btn-outline-secondary"><span>50 mg</span><br />
+                                    $00.00</button>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                                    <span class="badge badge-light">Hearth Health</span>
+                                    <span class="badge badge-light">Energy</span>
+                                    <span class="badge badge-light">Essentials</span>
+                            </div>
+                        <div class="pt-3">
+                            <div>
+                                <button class="btn btn-secondary">Shop Related Formulations <i
+                                        class="fas fa-caret-right pl-2"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-price-options">
+                            <div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        One-Time Purchase
+                                    </label>
+                                </div>
+                                <div class="pl-4 mb-4">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select Multi-Unit Discount</option>
+                                        <option value="">Count 1</option>
+                                        <option value="">Count 2</option>
+                                    </select>
+                                    <div
+                                        class="product-price d-flex align-items-center">
+                                        <p>Your <br />Price </p>
+                                        <p><span>$15.00</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="text-muted"><s>$20.00</s> Save $5.00 | 30%</p>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Subscribe and Save 40% + FREE SHIPPING
+                                    </label>
+                                </div>
+                                <div class="pl-4 mb-2">
+                                    <div
+                                        class="product-price d-flex align-items-center">
+                                        <p>Your <br /> Price</p>
+                                        <p><span>$15.00</span></p>
+                                    </div>
+                                    <p><a href="">Learn more about VIP AutoShip <i class="fas fa-chevron-down"></i></a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-controls pt-3 mb-3">
+                            <button class="btn btn-lg btn-success btn-block">Add To Cart</button>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <button class="btn btn-light mr-2">Add To Wish List</button>
+                            <button class="btn btn-light">Send Offer to a Friend</button>
                         </div>
                         <div>
-                            <span><a href="">58 Reviews</a> | <a href="">50 Questions and Answers</a></span>
-                        </div>
-                    </div>
-                    <p>Short-form T1 benefit statement for the product.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum.
-                    </p>
-                    <ul class="list-inline m-0">
-                        <li><i class="fas fa-square-full text-muted"></i> Non GMO</li>
-                        <li><i class="fas fa-square-full text-muted"></i> Vegetarian</li>
-                    </ul>
-                </div>
-                <div class="product-variants border-bottom py-3">
-                    <p class="note m-0 mb-2">Available versions:</p>
-                    <div class="d-flex align-items-center">
-                        <span>30 softgels</span>
-                        <button class="btn btn-outline-secondary"><span>50 mg</span> | $00.00</button>
-                        <button class="btn btn-outline-secondary"><span>100 mg</span> | $00.00</button>
-                        <button class="btn btn-outline-secondary"><span>200 mg</span> | $00.00</button>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span>60 softgels</span>
-                        <button class="btn btn-outline-secondary"><span>50 mg</span> | $00.00</button>
-                    </div> 
-                </div>
-                <div class="product-price-options py-3">
-                    <div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                One-Time Purchase
-                            </label>
-                        </div>
-                        <div class="pl-4 mb-3">
-                            <select name="" id="" class="form-control" style="width: 65%">
-                                <option value="">Select Multi-Unit Discount</option>
-                                <option value="">Count 1</option>
-                                <option value="">Count 2</option>
-                            </select>
-                            <div class="product-price d-flex align-items-center border-bottom border-light pb-2">
-                                <p>Your <br />Price </p>
-                                <p><span>$15.00</span></p>
-                                <ul class="list-unstyled">
-                                    <li><s>$20.00</s></li>
-                                    <li>Save $5.00 | 30%</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                Subscribe and Save 40% + FREE SHIPPING
-                            </label>
-                        </div>
-                        <div class="pl-4 mb-2">
-                            <div class="product-price d-flex align-items-center border-bottom border-light pb-3 mb-3">
-                                <p>Your <br /> Price</p>
-                                <p><span>$15.00</span></p>
-                                <p class="ml-3"><a href="">Learn more about VIP AutoShip <i
-                                            class="fas fa-chevron-down"></i></a></p>
-                            </div>
-                        </div>
-                        <div class="product-controls pl-4">
-                            <button class="btn btn-lg btn-success px-5">Add To Cart</button>
-                            <button class="btn btn-link">Add To Wish List</button>
-                            <button class="btn btn-link">Send Offer to a Friend</button>
+                            <ul class="list-unstyled list-inline m-0 text-right">
+                                <li><i class="fas fa-share"></i> Share</li>
+                                <li><i class="fas fa-print"></i> Print</li>
+                                <li><i class="fas fa-file-pdf"></i> Download PDF</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <span class="badge badge-light">Hearth Health</span>
-                    <span class="badge badge-light">Energy</span>
-                    <span class="badge badge-light">Essentials</span>
-                </div>
-                <div>
-                    <button class="btn btn-secondary">Shop Related Formulations <i
-                            class="fas fa-caret-right pl-2"></i></button>
-                </div>
-                <div class="pt-3">
-                    <ul class="list-unstyled list-inline m-0">
-                        <li><i class="fas fa-square-full text-muted"></i> Share</li>
-                        <li><i class="fas fa-square-full text-muted"></i> Print</li>
-                        <li><i class="fas fa-square-full text-muted"></i> Download PDF</li>
-                    </ul>
-                </div>
+
             </div>
         </div>
-        <section class="product-basket-wrap py-5 border-top">
+        <section class="product-basket-wrap py-4 mt-4 border-top">
             <h5>Frequently Bought Together</h5>
             <div class="d-flex my-4">
                 <div class="product-basket mr-5">
@@ -370,13 +424,15 @@
                 </div>
             </div>
             <ul class="p-0 mb-0">
-                <li><strong>This Item:</strong> Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support<sup>TM</sup>, 200 mg,
-                        30 softgels</li>
+                <li><strong>This Item:</strong> Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support<sup>TM</sup>,
+                    200 mg,
+                    30 softgels</li>
                 <li>Vitamin D3, 5000 IU, 60 softgels</li>
                 <li>Advanced Lipid Control, 60 vegetarian capsules</li>
             </ul>
         </section>
-        <section class="py-5 border-top">
+        
+        <section id="prodOverview" class="py-5 border-top">
             <h3>Overview</h3>
             <div>
                 <p>
@@ -474,11 +530,11 @@
                 </div>
             </div>
         </section>
-        <section class="border-top pt-3">
+        <section id="prodReviews" class="border-top pt-3">
             <h3>Reviews / Q&amp;A</h3>
             <img src="images/reviews-placeholder.jpg" alt="" class="img-fluid" />
         </section>
-        <section class="product-details border-top py-3 mt-3">
+        <section id="prodDetails" class="product-details border-top py-3 mt-3">
             <h3>Details</h3>
             <p><strong>CoQ10 for heart health and cellular energy</strong></p>
             <p>
@@ -546,7 +602,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-sup-facts py-3">
+        <section id="prodSupFacts" class="product-sup-facts py-3">
             <div id="tabsSupplementFacts">
                 <table>
                     <tbody>
@@ -617,7 +673,8 @@
                                     </tbody>
                                 </table>
                                 <p>Non-GMO</p>
-                                <p class="wwwProdLDTextRef">PrimaVie® is a registered trademark of Natreon, Inc.<br>Q+®,
+                                <p class="wwwProdLDTextRef">PrimaVie® is a registered trademark of Natreon,
+                                    Inc.<br>Q+®,s
                                     Kaneka Ubiquinol™, and the quality seal™ are registered or pending trademarks of
                                     Kaneka Corp.</p>
                             </td>
@@ -655,6 +712,8 @@
                 &#8203;
             </div>
         </section>
+
+
         <section class="product-related border-top py-3">
 
             <h3 class="mb-3">Related Lab test</h3>
@@ -887,9 +946,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -899,8 +956,37 @@
     <script type="text/javascript" src="scripts/slick.min.js"></script>
 
     <script type="text/javascript">
-        //Slick Slider
+
+
         $(document).ready(function () {
+            //Sticky product nav
+            $("#stickyProdNav").hide(); //hide your div initially
+            var topOfOthDiv = $("#prodOverview").offset().top - 150;
+            var $window = $(window);
+            $window.scroll(function () {
+                if ($window.scrollTop() > topOfOthDiv) {
+                    $("#stickyProdNav").fadeIn('slow');
+                } else {
+                    $("#stickyProdNav").fadeOut('slow');
+                }
+            });
+
+            // Product page anchor Links smooth scroll
+            $('#stickySubNav').on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - 135
+                }, 500);
+            });
+
+
+            //Back to top
+            $("#toTop").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+            });
+
+            //Slick Slider
             $('.related-products').slick({
                 infinite: true,
                 slidesToShow: 3,

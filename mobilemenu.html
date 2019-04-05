@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Product Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.css">
+</head>
+
+<body>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li>
+                        <a href="#">Hosting</a>
+                        <ul>
+                            <li><a href="#">Private Server</a></li>
+                            <li><a href="#">Managed Hosting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Domains</a></li>
+                    <li><a href="#">Websites</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#main-nav').hcOffcanvasNav({
+                maxWidth: 980,
+                levelOpen: 'expand'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>,
